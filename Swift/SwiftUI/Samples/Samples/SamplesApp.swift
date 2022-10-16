@@ -15,7 +15,8 @@ struct SamplesApp: App {
 //            MyView()
 //            AnimationView()
 //            ScalingGauge()
-            AnimationScalingGauge()
+//            AnimationScalingGauge()
+            CounterView()
         }
     }
 }
