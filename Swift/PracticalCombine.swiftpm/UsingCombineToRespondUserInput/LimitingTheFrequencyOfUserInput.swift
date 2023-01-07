@@ -16,8 +16,18 @@
  */
 
 import UIKit
+import SwiftUI
 import Combine
+import TimelaneCombine
 
+struct DebounceInspectRepresentable: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some UIViewController {
+        DebounceViewController()
+    }
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
+    }
+}
 
 // textFieldに何かを入力して検索することを想定
 class DebounceViewController: UIViewController, UITextFieldDelegate {
@@ -73,7 +83,8 @@ class DebounceViewController: UIViewController, UITextFieldDelegate {
             .debounce(for: 0.3, scheduler: DispatchQueue.main) // 全部に反応せずにユーザーが考えながら入力していることを想定
             .filter({ ($0 ?? "").count > 2}) // 何かを検索する時は１文字入力して検索ってことはなさそうだ体痛い3文字以上ワードを入力したら検索することを想定した
             .removeDuplicates() // 入力、ポーズ、追加でちょっと入力したけどやっぱり違ったから追加分を削除して元々入力したワードに戻った場合に再度同じワードで検索が走るような重複を省いて無駄なAPIリクエストが実行されないように
-            .print()
+//            .print()
+            .lane("Search Query", filter: [.event])
             .assign(to: \.text, on: label)
             .store(in: &cancellables)
     }
