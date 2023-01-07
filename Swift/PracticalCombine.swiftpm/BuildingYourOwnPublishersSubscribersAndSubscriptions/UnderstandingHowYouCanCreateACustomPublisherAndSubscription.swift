@@ -62,8 +62,8 @@ fileprivate extension Subscriptions {
     }
 }
 
-fileprivate func executecCustomPublisher() {
-    let customPublisher = Publishers.IntPublisher(numberOfValues: 10)
+func executecCustomIntPublisher() {
+    let customIntPublisher = Publishers.IntPublisher(numberOfValues: 10)
     customPublisher
         .customSink(receiveCompletion: { completion in
             print(completion)
