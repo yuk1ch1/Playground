@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91181929296C05530096B142 /* ResultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91181928296C05530096B142 /* ResultBuilder.swift */; };
 		91BE5E7728FC0A0A000E40EC /* StateObject&ObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE5E7628FC0A0A000E40EC /* StateObject&ObservedObject.swift */; };
 		91FE077D28FA3F070038B96E /* SamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE077C28FA3F070038B96E /* SamplesApp.swift */; };
 		91FE077F28FA3F070038B96E /* GuageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE077E28FA3F070038B96E /* GuageTest.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91181928296C05530096B142 /* ResultBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBuilder.swift; sourceTree = "<group>"; };
 		91BE5E7628FC0A0A000E40EC /* StateObject&ObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StateObject&ObservedObject.swift"; sourceTree = "<group>"; };
 		91FE077928FA3F070038B96E /* Samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Samples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FE077C28FA3F070038B96E /* SamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesApp.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				91FE077E28FA3F070038B96E /* GuageTest.swift */,
 				91FE078E28FA406F0038B96E /* NavigationTest.swift */,
 				91BE5E7628FC0A0A000E40EC /* StateObject&ObservedObject.swift */,
+				91181928296C05530096B142 /* ResultBuilder.swift */,
 				91FE078028FA3F090038B96E /* Assets.xcassets */,
 				91FE078228FA3F090038B96E /* Preview Content */,
 			);
@@ -155,6 +158,7 @@
 				91FE078F28FA406F0038B96E /* NavigationTest.swift in Sources */,
 				91FE077D28FA3F070038B96E /* SamplesApp.swift in Sources */,
 				91FE078B28FA3F910038B96E /* GridTest.swift in Sources */,
+				91181929296C05530096B142 /* ResultBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
