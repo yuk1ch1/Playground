@@ -1,0 +1,6 @@
+framework module Pods_SizeThatFitsSample_SizeThatFitsSampleUITests {
+  umbrella header "Pods-SizeThatFitsSample-SizeThatFitsSampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

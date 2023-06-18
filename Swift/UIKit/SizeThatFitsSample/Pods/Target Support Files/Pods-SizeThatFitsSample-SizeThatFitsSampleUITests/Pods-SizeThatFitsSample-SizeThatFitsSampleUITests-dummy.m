@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SizeThatFitsSample_SizeThatFitsSampleUITests : NSObject
+@end
+@implementation PodsDummy_Pods_SizeThatFitsSample_SizeThatFitsSampleUITests
+@end
